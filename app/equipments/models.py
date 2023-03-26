@@ -65,10 +65,14 @@ class EquipmentForm(models.Model):
     hazardous_area_classification_met = models.BooleanField(blank=True, null=True)
     other_approvals = models.TextField(blank=True, null=True)
     manufactural_quality_good = models.BooleanField(blank=True, null=True)
-    installation_match_manufacturer_recommendations = models.BooleanField(blank=True, null=True)
-    installation_match_manufacturer_recommendations_if_no = models.TextField(blank=True, null=True)
-    maintainance_plan_agree_with_manufacturer_recommendations = models.BooleanField(blank=True, null=True)
-    maintainance_plan_agree_with_manufacturer_recommendations_if_no = models.BooleanField(blank=True, null=True)
+    installation_match_manufacturer_recommendations = models.BooleanField(
+        blank=True, null=True)
+    installation_match_manufacturer_recommendations_if_no = models.TextField(
+        blank=True, null=True)
+    maintainance_plan_agree_with_manufacturer_recommendations = models.BooleanField(
+        blank=True, null=True)
+    maintainance_plan_agree_with_manufacturer_recommendations_if_no = models.BooleanField(
+        blank=True, null=True)
     special_instructions = models.TextField(blank=True, null=True)
     approval_based_on = models.TextField(blank=True, null=True)
     prior_use_application = models.CharField(max_length=255, blank=True, null=True)

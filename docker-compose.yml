@@ -29,6 +29,16 @@ services:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
       - POSTGRES_PASSWORD=changeme
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@avdevs.com
+      - PGADMIN_DEFAULT_PASSWORD=Avdevs@123
+    ports:
+      - "8080:80"
 
 volumes:
   dev-db-data:

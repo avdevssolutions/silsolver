@@ -7,7 +7,7 @@ class Equipment(models.Model):
     SOFTWARE_REV_C = 'C'
     SOFTWARE_REV_D = 'D'
 
-    MEMBERSHIP_CHOICES = [
+    SOFTWARE_CHOICES = [
         (SOFTWARE_REV_A, 'A'),
         (SOFTWARE_REV_B, 'B'),
         (SOFTWARE_REV_C, 'C'),
@@ -42,7 +42,7 @@ class Equipment(models.Model):
     version = models.IntegerField(blank=True, null=True)
     equipment_description = models.TextField()
     special_instructions = models.TextField(blank=True, null=True)
-    software_rev = models.CharField(max_length=1, choices=MEMBERSHIP_CHOICES,
+    software_rev = models.CharField(max_length=1, choices=SOFTWARE_CHOICES,
                                     blank=True, null=True)
     firmware_rev = models.CharField(max_length=255, blank=True, null=True)
     utility_software = models.CharField(max_length=255, blank=True, null=True)
@@ -71,7 +71,7 @@ class EquipmentForm(models.Model):
         blank=True, null=True)
     maintainance_plan_agree_with_manufacturer_recommendations = models.BooleanField(
         blank=True, null=True)
-    maintainance_plan_agree_with_manufacturer_recommendations_if_no = models.BooleanField(
+    maintainance_plan_agree_with_manufacturer_recommendations_if_no = models.TextField(
         blank=True, null=True)
     special_instructions = models.TextField(blank=True, null=True)
     approval_based_on = models.TextField(blank=True, null=True)

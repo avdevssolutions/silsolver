@@ -1,8 +1,3 @@
-# silsolver
-
-
-
-
 #  Silsolver
 
 This is a project that contains **Django, Django-Rest, PostgreSQL, pgAdmin, and Docker.**
@@ -13,9 +8,9 @@ This project is a basic Django web application that uses PostgreSQL as the datab
 
 Installation
 
-Clone the repository:  
-`git clone https://github.com/avdevssolutions/silsolver.git` 
-Navigate to the project directory: 
+Clone the repository:
+`git clone https://github.com/avdevssolutions/silsolver.git`
+Navigate to the project directory:
 `cd silsolver`
 Build and start the containers:
 `docker-compose up --build -d`
@@ -24,7 +19,7 @@ Access pgAdmin at http://localhost:8080 and log in using the credentials specifi
 
 **Usage**
 
-After installation, the web application will be available at http://localhost:8000. 
+After installation, the web application will be available at http://localhost:8000.
 The application can be customized by modifying the Django project files located in the app directory.
 
 The PostgreSQL database can be accessed and managed using pgAdmin.

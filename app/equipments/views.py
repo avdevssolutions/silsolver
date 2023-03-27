@@ -6,7 +6,7 @@ from .serializers import EquipmentSerializer, EquipmentDetailSerializer
 
 
 class EquipmentViewSet(viewsets.ModelViewSet):
-    queryset = Equipment.objects.all()
+    queryset = Equipment.objects.all().order_by('pk')
     serializer_class = EquipmentSerializer
 
     def destroy(self, request, *args, **kwargs):
@@ -17,7 +17,7 @@ class EquipmentViewSet(viewsets.ModelViewSet):
 
 
 class EquipmentDetailViewSet(viewsets.ModelViewSet):
-    queryset = EquipmentForm.objects.all()
+    queryset = EquipmentForm.objects.all().order_by('pk')
     serializer_class = EquipmentDetailSerializer
 
     def destroy(self, request, *args, **kwargs):

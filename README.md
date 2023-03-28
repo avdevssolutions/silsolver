@@ -29,23 +29,20 @@ To log in to pgAdmin, open http://localhost:8080 in a web browser and enter the 
 
 The following environment variables can be set to configure the project:
 
-DB_NAME: The name of the PostgreSQL database (default: devdb).
+DB_NAME: The name of the PostgreSQL database.
 
-DB_USER: The username for the PostgreSQL database (default: devuser).
+DB_USER: The username for the PostgreSQL database.
 
-DB_PASSWORD: The password for the PostgreSQL database (default: changeme).
+DB_PASSWORD: The password for the PostgreSQL database.
 
-DB_HOST: The hostname for the PostgreSQL database (default: db).
+DB_HOST: The hostname for the PostgreSQL database.
 
-DB_PORT: The port for the PostgreSQL database (default: 5432).
-
-PGADMIN_DEFAULT_EMAIL: The email address for the default pgAdmin user (default: admin@avdevs.com).
-
-PGADMIN_DEFAULT_PASSWORD: The password for the default pgAdmin user (default: Avdevs@123).
+DB_PORT: The port for the PostgreSQL database.
 
 These environment variables can be set in the docker-compose.yml file.
 
 **Repo Handler**
 
 [**Kushal Dulani**](https://www.linkedin.com/in/kushaldulani/)
-**[AV DEVS SOLUTIONS](https://www.linkedin.com/company/avdevs/)**
+
+[**AV DEVS SOLUTIONS**](https://www.linkedin.com/company/avdevs/)
